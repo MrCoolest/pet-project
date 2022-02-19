@@ -39,7 +39,10 @@ if(isset($_SESSION['username']) && $_SESSION['username'] !== $username){
       <a class="nav-link " href="adminqu.php">Querries</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="">Subscriptions</a>
+      <a class="nav-link " href="ushare.php">User Share</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./badminsub.php">Subscriptions</a>
     </li>
   </ul>
 </div><br>

@@ -13,8 +13,6 @@ $result = $conn->query($sql);
 }
 
 
-
-
    session_start();
 ?>
 

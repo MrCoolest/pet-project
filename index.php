@@ -98,21 +98,10 @@ if(isset($_SESSION['username']) && $_SESSION['username'] === $username){
               if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
               {
                 echo '<a href="./logout.php" id=""  class="logout-btn">Logout</a>';
-                echo '<a href="#"><div id="like-btn" class="fas fa-user-circle"></div></a>';
-                echo '      <div class="heart">
-                <div class="box">
-                    
-                    
-                    <div class="content">
-                        <h3>'.$_SESSION["name"].'</h3>
-                        <h3>'.$_SESSION["username"].'</h3>
-                         <a href=""><h3>My posts</h3></a>
-                        
-                        
-                    </div>
-                </div>
+                echo '<a href="./upost.php" id=""  class="logout-btn">My Posts</a>';
+                echo '<a href="./upersonal.php"><div id="like-btn" class="fas fa-user-circle"></div></a>';
                 
-            </div>';
+            
               }else{
                echo '<a href="./login_form.php" id=" "  class="login-btn">Login</a>';
               }
@@ -296,7 +285,7 @@ if(isset($_SESSION['username']) && $_SESSION['username'] === $username){
     <?php
         require_once "./config.php";
 
-        $sql = "SELECT id, first_name, last_name, img,Age_group,State,Pet_Name FROM pet_posts";
+        $sql = "SELECT id, first_name, last_name, img,Age_group,State,Pet_Name FROM pet_posts WHERE Activate=1";
         
         $result = $conn->query($sql);
         

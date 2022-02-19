@@ -28,13 +28,16 @@ if(isset($_SESSION['username']) && $_SESSION['username'] !== $username){
 <body>
 
 <div class="container mt-3">
-  
+ 
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Querries</a>
+      <a class="nav-link active" href="adminqu.php">Querries</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="badminsub.php">Subscriptions</a>
+      <a class="nav-link " href="ushare.php">User Share</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="badminsub.php">Subscriptions</a>
     </li>
   </ul>
 </div><br>
